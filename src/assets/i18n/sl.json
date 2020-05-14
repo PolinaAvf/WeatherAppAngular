@@ -1,0 +1,15 @@
+{
+    "demo.title": "Angular vreme",
+    "demo.button": "Dodaj mesto",
+    "demo.city":"Naziv mesta",
+    "demo.name": "Ime",
+    "demo.email":"E-naslov",
+    "demo.password":"Geslo",
+    "demo.register":"Registriraj se",
+    "demo.register1":"Registracija",
+    "demo.login":"Prijava",
+    "demo.namereq":"Izpolni ime",
+    "demo.emailreq":"Izpolni e-naslov",
+    "demo.passreq":"Izpolni geslo",
+    "demo.search":"Iskalnik"
+  }

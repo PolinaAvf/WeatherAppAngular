@@ -1,0 +1,59 @@
+img{
+  width:60px;
+  height:auto;
+}
+
+.row {
+  align-content: center;
+  box-shadow: 1px 1px 6px #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  height:auto;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 3px;
+  font-size: 12px;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.temperature {
+  cursor: default;
+  font-weight: bold;
+}
+
+  .col-1 {
+    display: inline-block;
+    width: 40%;
+  }
+  
+  .col-1 h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 22px;
+  }
+  
+  .col-2 {
+    display: inline-block;
+    width: 50%;
+    margin-left:280px;
+    vertical-align: top;
+    text-align: right;
+  }
+  
+  .temperature {
+    font-size: 22px;
+  }
+  @media screen and (max-width:768px) and (min-width:360px){
+    .row{
+      width:100%;
+    }
+    .col-2{
+      margin: 0 0 0 100px;
+    }
+  }

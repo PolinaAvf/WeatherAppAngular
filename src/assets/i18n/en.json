@@ -1,0 +1,15 @@
+{
+    "demo.title": "Angular weather",
+    "demo.button": "Add city",
+    "demo.city":"City name",
+    "demo.name": "Name",
+    "demo.email":"Email",
+    "demo.password":"Password",
+    "demo.register":"Register",
+    "demo.register1":"Register",
+    "demo.login":"Login",
+    "demo.namereq":"Name is required",
+    "demo.emailreq":"Email is required",
+    "demo.passreq":"Password is required",
+    "demo.search":"Go searching"
+  }

@@ -1,0 +1,43 @@
+<div>
+  <div>
+    <form [formGroup]="angForm" novalidate>
+      <div style="text-align:center" class="form-group" >
+        <label class="col-md-4"><p [translate]="'demo.name'" [translateParams]="{name: 'Name'}"></p></label>
+        <input type="text" class="form-control" formControlName="person_name" #person_name />
+      </div>
+      <div *ngIf="angForm.controls['person_name'].invalid && (angForm.controls['person_name'].dirty || angForm.controls['person_name'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['person_name'].errors.required" style="text-align:center">
+          <p [translate]="'demo.namereq'" [translateParams]="{name: 'Name is required'}"></p>
+        </div>
+      </div>
+      <div class="form-group" style="text-align:center">
+        <label class="col-md-4"><p [translate]="'demo.email'" [translateParams]="{name: 'Email'}"></p></label>
+        <input type="email" class="form-control" formControlName="email" #email />
+      </div>
+      <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['email'].errors.required" style="text-align:center">
+          <p [translate]="'demo.emailreq'" [translateParams]="{name: 'Email is required'}"></p>
+        </div>
+      </div>
+      <div class="form-group" style="text-align:center">
+        <label class="col-md-4"><p [translate]="'demo.password'" [translateParams]="{name: 'Password'}"></p></label>
+        <input type="password" class="form-control" formControlName="password" #password />
+      </div>
+      <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['password'].errors.required" style="text-align:center">
+          <p [translate]="'demo.passreq'" [translateParams]="{name: 'Password is required'}"></p>
+        </div>
+      </div>
+      <div class="form-group" style="text-align:center">
+        <button (click)="addBusiness(person_name.value, email.value, password.value)"
+            [disabled]="angForm.pristine || angForm.invalid" 
+            class="btn btn-primary" >
+           
+
+              <p id="search_btn" style="margin: auto;"[translate]="'demo.register'" [translateParams]="{name: 'Register'}"></p>
+            
+         </button>
+    </div>
+    </form>
+  </div>
+</div>
